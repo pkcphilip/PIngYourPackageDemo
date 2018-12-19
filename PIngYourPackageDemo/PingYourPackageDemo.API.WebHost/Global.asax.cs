@@ -19,6 +19,7 @@ namespace PingYourPackageDemo.API.WebHost
             RouteConfig.RegisterRoutes(config);
             WebAPIConfig.Configure(config);
             AutofacWebAPI.Initialize(config);
+            EFConfig.Initialize();
         }
 
         protected void Session_Start(object sender, EventArgs e)

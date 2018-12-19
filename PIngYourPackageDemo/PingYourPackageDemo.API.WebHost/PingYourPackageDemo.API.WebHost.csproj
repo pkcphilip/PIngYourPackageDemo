@@ -101,6 +101,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\EFConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -119,6 +120,10 @@
     <ProjectReference Include="..\PingYourPackageDemo.API\PingYourPackageDemo.API.csproj">
       <Project>{76E589B9-D8DD-4876-9401-736D4763B693}</Project>
       <Name>PingYourPackageDemo.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PingYourPackageDemo.Domain\PingYourPackageDemo.Domain.csproj">
+      <Project>{6f498f67-ed3a-493e-bd86-90bf7a8dd6b1}</Project>
+      <Name>PingYourPackageDemo.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
