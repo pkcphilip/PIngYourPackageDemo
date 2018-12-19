@@ -29,19 +29,19 @@ namespace PingYourPackageDemo.API.Config
             //        new[] { new ShipmentStatesDispatcher() });
 
             // Routes
-            routes.MapHttpRoute(
-                "AffiliateShipmentsHttpRoute",
-                "api/affiliates/{key}/shipments/{shipmentKey}",
-                defaults: new { controller = "AffiliateShipments", shipmentKey = RouteParameter.Optional },
-                constraints: new { key = new GuidRouteConstraint(), shipmentKey = new GuidRouteConstraint() },
-                handler: affiliateShipmentsPipeline);
+            //routes.MapHttpRoute(
+            //    "AffiliateShipmentsHttpRoute",
+            //    "api/affiliates/{key}/shipments/{shipmentKey}",
+            //    defaults: new { controller = "AffiliateShipments", shipmentKey = RouteParameter.Optional },
+            //    constraints: new { key = new GuidRouteConstraint(), shipmentKey = new GuidRouteConstraint() },
+            //    handler: affiliateShipmentsPipeline);
 
-            routes.MapHttpRoute(
-                "ShipmentStatesHttpRoute",
-                "api/shipments/{key}/shipmentstates",
-                defaults: new { controller = "ShipmentStates" },
-                constraints: new { key = new GuidRouteConstraint() },
-                handler: shipmentStatesPipeline);
+            //routes.MapHttpRoute(
+            //    "ShipmentStatesHttpRoute",
+            //    "api/shipments/{key}/shipmentstates",
+            //    defaults: new { controller = "ShipmentStates" },
+            //    constraints: new { key = new GuidRouteConstraint() },
+            //    handler: shipmentStatesPipeline);
 
             routes.MapHttpRoute(
                 "DefaultHttpRoute",
