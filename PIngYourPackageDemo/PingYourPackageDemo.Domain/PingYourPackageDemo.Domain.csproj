@@ -47,9 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Affiliate.cs" />
     <Compile Include="Entities\Core\EntitiesContext.cs" />
     <Compile Include="Entities\Core\IEntity.cs" />
     <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Shipment.cs" />
+    <Compile Include="Entities\ShipmentState.cs" />
+    <Compile Include="Entities\ShipmentStatus.cs" />
+    <Compile Include="Entities\ShipmentType.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserInRole.cs" />
     <Compile Include="Migrations\201812191502442_Init.cs" />
@@ -59,6 +64,10 @@
     <Compile Include="Migrations\201812191520146_ValidationAttributeChanges.cs" />
     <Compile Include="Migrations\201812191520146_ValidationAttributeChanges.Designer.cs">
       <DependentUpon>201812191520146_ValidationAttributeChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812191540509_CompletedTheStructure.cs" />
+    <Compile Include="Migrations\201812191540509_CompletedTheStructure.Designer.cs">
+      <DependentUpon>201812191540509_CompletedTheStructure.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812191520146_ValidationAttributeChanges.resx">
       <DependentUpon>201812191520146_ValidationAttributeChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812191540509_CompletedTheStructure.resx">
+      <DependentUpon>201812191540509_CompletedTheStructure.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

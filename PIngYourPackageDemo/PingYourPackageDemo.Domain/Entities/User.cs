@@ -35,9 +35,12 @@ namespace PingYourPackageDemo.Domain.Entities
 
         public virtual ICollection<UserInRole> UserInRoles { get; set; }
 
+        public virtual Affiliate Affiliate { get; set; }
+
         public User()
         {
             UserInRoles = new HashSet<UserInRole>();
+            Affiliate = new Affiliate();
         }
     }
 }
