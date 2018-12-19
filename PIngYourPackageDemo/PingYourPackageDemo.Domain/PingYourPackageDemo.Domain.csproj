@@ -56,6 +56,10 @@
     <Compile Include="Migrations\201812191502442_Init.Designer.cs">
       <DependentUpon>201812191502442_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812191520146_ValidationAttributeChanges.cs" />
+    <Compile Include="Migrations\201812191520146_ValidationAttributeChanges.Designer.cs">
+      <DependentUpon>201812191520146_ValidationAttributeChanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -66,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812191502442_Init.resx">
       <DependentUpon>201812191502442_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812191520146_ValidationAttributeChanges.resx">
+      <DependentUpon>201812191520146_ValidationAttributeChanges.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
